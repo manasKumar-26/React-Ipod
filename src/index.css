@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.wheelBox{
+  height: 200px;
+  width: 250px;
+  background-color: #cdcdd0;
+  border:0.5px solid black;
+  padding:5px;
+ 
+}
+.flexR{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Prop{
+  width: 100vw;
+}
+.wheelRotate{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.wheelok{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #bbbbb0;
+}
+.icon{
+  height: 20px;
+  width: 20px;
+}
+.applist{
+  padding:15px;
+  background-color: white;
+  height: 170px;
+  width: 220px;
+  border-radius: 10px;
+  overflow-y: scroll;
+
+}
+.applist::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.applist::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.applist::-webkit-scrollbar-thumb {
+  background-color: #2f3035;
+  outline: 1px solid slategrey;
+}
+.list-content{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-content a{
+  padding: 5px;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    font-family: fangsong;
+    display: flex;
+    justify-content: space-between;
+}
+.listBord{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 1px 2px 2px 2px #a09292 ;
+}
+.wheelBord{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 2px 2px 2px #a09292 ;
+
+}
+
+
+
+
