@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Wheel from './wheelUI';
-import List from './list'
+import Ipod from './ipod';
 
 function App() {
   return (
     <div className="App">
-      <List/>
-      <Wheel/>
+      <Ipod/>
     </div>
   );
 }
