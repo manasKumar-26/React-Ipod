@@ -29,17 +29,26 @@ class Ipod extends React.Component{
     rotateEvent=(e)=>{
         const touchArea = document.getElementById('Wrotate');
         const myRegion = new ZingTouch.Region(touchArea);
-       
-        console.log(this)
-        myRegion.bind(touchArea, 'rotate', function(e){
-           console.log(e.detail)
-
-        //   console.log(e.detail.distanceFromLast)
-        });
+        let initialAngle=0;
+        myRegion.bind(touchArea,'rotate',(e)=>{
+            initialAngle+=e.detail.distanceFromLast;
+            if(initialAngle > 70 && this.state.selected !==4){
+                this.setState((prevState)=>{
+                    return{
+                        selected:prevState.selected+1
+                    }
+                })
+            }
+            else{
+                this.setState({
+                    selected:0
+                })
+            }
+            
+        })
     }
     render(){
         const {Options,selected}=this.state;
-        console.log(Options);
         return (
             <React.Fragment>
                 <div className="Prop flexR ">
@@ -48,10 +57,11 @@ class Ipod extends React.Component{
                    <div className="applist">
                         <div>
                             <div className="list-content">
-                                {Options.map((item)=>{
+                                {Options.map((item,index)=>{
                                     return <List 
                                         name={item.name}
-                                        selected={Options.indexOf(item)===selected}
+                                        selected={index===selected}
+                                        key={`ipod-${index}`}
                                     />
                                 })}
                             </div>

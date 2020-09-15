@@ -10,6 +10,7 @@ const list=(props)=>{
                 <a href="/"> {props.name} <span><img alt=" open menu" src="https://www.flaticon.com/svg/static/icons/svg/43/43478.svg"  className="icon"/></span> </a> 
             );
         }
+      
         
     
 }
