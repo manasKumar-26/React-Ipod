@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Wheel Styling  */
 .wheelBox{
   height: 200px;
   width: 250px;
@@ -46,6 +47,13 @@ code {
   border-radius: 50%;
   background-color: #bbbbb0;
 }
+.wheelBord{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 1px 2px 2px 2px #a09292 ;
+
+}
+/* App styling  */
 .icon{
   height: 20px;
   width: 20px;
@@ -53,24 +61,12 @@ code {
 .applist{
   padding:15px;
   background-color: white;
-  height: 170px;
+  height: 190px;
   width: 220px;
   border-radius: 10px;
-  overflow-y: scroll;
 
 }
-.applist::-webkit-scrollbar {
-  width: 5px;
-}
- 
-.applist::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
- 
-.applist::-webkit-scrollbar-thumb {
-  background-color: #2f3035;
-  outline: 1px solid slategrey;
-}
+/* Display List of menus styling */
 .list-content{
   text-align: left;
   display: flex;
@@ -88,16 +84,33 @@ code {
 .listBord{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  box-shadow: 1px 2px 2px 2px #a09292 ;
-}
-.wheelBord{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 1px 2px 2px 2px #a09292 ;
+  box-shadow: 1px 2px 2px 2px #a09292 ; 
+  height: 250px;
 
 }
+/* Menu items and options Styling */
 .active{
   background-color: lightgray;
+}
+
+#coverpic{
+  height: 6rem;
+  width:7rem
+}
+.flex-r{
+  display: flex;
+  justify-content: space-between;
+}
+.flex-c{
+  display:flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+hr{
+  height: 5px;
+  background: silver;
+  padding: 0;
+  border-radius: 20px;
 }
 
 

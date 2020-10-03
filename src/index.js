@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-
+import App from './Components/App';
+//Entry Point for our Ipod App
 ReactDOM.render(
   <React.StrictMode>
     <App />
